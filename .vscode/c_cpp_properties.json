@@ -4,7 +4,8 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${vcpkgRoot}/x86-windows/include"
+                "${vcpkgRoot}/x86-windows/include",
+                "/usr/include/x86_64-linux-gnu/mpich"
             ],
             "defines": [
                 "_DEBUG",
