@@ -52,10 +52,10 @@ Process numbers will not be in ascending order, because the processes execute in
 #### MPI Communication Routes
 
 * MPI_Send(void *data_to_send, int send_count, MPI_Datatype send_type, 
-      int destination_ID, int tag, MPI_Comm comm) - sends a message to another process
-      data_to_send: variable of a C type that corresponds to the send_type supplied below
-    ** send_count: number of data elements to be sent (nonnegative int)
-    **send_type: datatype of the data to be sent (one of the MPI datatype handles)
-    **destination_ID: process ID of destination (int)
-    **tag: message tag (int)
-    **comm: communicator (handle)
+      int destination_ID, int tag, MPI_Comm comm) - sends a message to another process <br/>
+      data_to_send: variable of a C type that corresponds to the send_type supplied below <br/>
+    ** send_count: number of data elements to be sent (nonnegative int) <br/>
+    **send_type: datatype of the data to be sent (one of the MPI datatype handles) <br/>
+    **destination_ID: process ID of destination (int) <br/>
+    **tag: message tag (int) <br/>
+    **comm: communicator (handle) <br/>
