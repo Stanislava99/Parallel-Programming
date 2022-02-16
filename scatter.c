@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <mpi.h>
+#include <stdlib.h>
+
 
 // program in which every process gets a part of data
 
@@ -10,7 +12,7 @@ int main (int argc,char ** argv) {
     MPI_Init(&argc, &argv);
 
     MPI_Comm_size( MPI_COMM_WORLD , &size);
-    MPI_Comm_rank( MPI_COMM_WORLD , my_id);
+    MPI_Comm_rank( MPI_COMM_WORLD , &my_id);
 
     int count = 4; // number of elements in array 
     int *array, *send_array;

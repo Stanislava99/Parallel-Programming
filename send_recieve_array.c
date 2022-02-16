@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <mpi.h>
+#include <stdlib.h>
 
 // program that will send array from one process to another
 
@@ -32,7 +33,7 @@ int main (int argc, char **argv){
     } 
     else {
         // child process 
-        MPI_Recv(&l,1,MPI_INT,0,123,MPI_COMM_WORDL,&status);
+        MPI_Recv(&l,1,MPI_INT,0,123,MPI_COMM_WORLD,&status);
         a = (int *) malloc (l*sizeof(int)); // setting array length 
         MPI_Recv(a, l, MPI_INT,0,1234,MPI_COMM_WORLD,&status);
 
